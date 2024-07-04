@@ -63,7 +63,7 @@ function creatCard(counter){
                     <h4>Code: ${counter.code}</h4>
                     <h4>ID: ${counter.id}</h4>
                 </div>
-                <button id='showBtn'>Show</button>
+                <a id='showBtn' class='show' href="./pages/about.html">Show</a>
         </div>
     `
 }
@@ -90,21 +90,4 @@ document.addEventListener('DOMContentLoaded', function(){
         })
 })
 
-
-showBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    function creatModal(counter){
-        return `
-            <div class="card-modal" id='cardModal'>
-                <img src="${counter.flag}" alt="">
-                <div class="content">
-                    <h2>Name: ${counter.country}</h2>
-                    <h3>Code: ${counter.code}</h3>
-                    <h3>Id: ${counter.id}</h3>
-                </div>
-                <button class="close">X</button>
-            </div>
-        `
-    }
-    creatModal.push(countries)
-})
+// showBtn.addEventListener()

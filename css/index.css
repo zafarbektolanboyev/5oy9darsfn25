@@ -99,7 +99,15 @@ body{
     color: white;
     font-size: 1.5rem;
 }
-#showBtn{
+
+.card-modal{
+    display: none;
+    justify-content: space-between;
+    gap: 50px;
+}
+.show{
+    text-decoration: none;
+    margin-left: 10px;
     width: 100px;
     padding: 10px;
     margin-left: 90px;
@@ -108,16 +116,11 @@ body{
     border: 1px solid white;
     border-radius: 5px;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1rem;
     transition: all 0.5s;
 }
-#showBtn:hover{
+.show:hover{
     background-color: white;
     color: black;
-}
-.card-modal{
-    display: none;
-    justify-content: space-between;
-    gap: 50px;
 }
